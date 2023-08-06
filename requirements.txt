@@ -8,8 +8,16 @@ annotated-types==0.5.0
     # via pydantic
 black==23.7.0
     # via -r requirements.in
+cfgv==3.3.1
+    # via pre-commit
 click==8.1.6
     # via black
+distlib==0.3.7
+    # via virtualenv
+filelock==3.12.2
+    # via virtualenv
+identify==2.5.26
+    # via pre-commit
 isort==5.12.0
     # via -r requirements.in
 mypy==1.4.1
@@ -18,16 +26,24 @@ mypy-extensions==1.0.0
     # via
     #   black
     #   mypy
+nodeenv==1.8.0
+    # via pre-commit
 packaging==23.1
     # via black
 pathspec==0.11.2
     # via black
 platformdirs==3.10.0
-    # via black
+    # via
+    #   black
+    #   virtualenv
+pre-commit==3.3.3
+    # via -r requirements.in
 pydantic==2.0.2
     # via -r requirements.in
 pydantic-core==2.1.2
     # via pydantic
+pyyaml==6.0.1
+    # via pre-commit
 tomli==2.0.1
     # via
     #   black
@@ -37,3 +53,8 @@ typing-extensions==4.7.1
     #   mypy
     #   pydantic
     #   pydantic-core
+virtualenv==20.24.2
+    # via pre-commit
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools

@@ -2,3 +2,4 @@ pydantic
 black
 isort
 mypy
+pre-commit
