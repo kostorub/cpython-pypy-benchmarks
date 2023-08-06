@@ -1,10 +1,8 @@
-from statistics import correlation
-
 from generate_complex_data import OrdinaryClass, gen_ordinary_models
 from utils import average_time_map, timeitit
 
-ITERATIONS = 40
-MODELS_LEN = 5000
+ITERATIONS = 10
+MODELS_LEN = 7000
 
 
 def check_ordinary_model_correlation() -> None:
@@ -31,5 +29,11 @@ def print_stats() -> None:
 
 
 if __name__ == "__main__":
+    from statistics import correlation
+
+    check_ordinary_model_correlation()
+    print_stats()
+    from overwritten.statistics import correlation
+
     check_ordinary_model_correlation()
     print_stats()
