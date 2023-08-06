@@ -1,0 +1,4 @@
+pydantic
+black
+isort
+mypy
